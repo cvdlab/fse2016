@@ -1,15 +1,12 @@
-# fse2016
+# fse2016 - Industrial Track
 FSE 2016: ACM SIGSOFT International Symposium on the Foundations of Software Engineering
 
-## constraints
+## size limits
 
-- 250 words max for the abstract
--  10 pages for all text and figures
--   2 pages for references 
+6 pages, including all text, references, appendices, and figures
  
 ## important dates
 
-- March 11, 2016 (23:59:59 AOE) --> full paper submission date
-- April 30, 2016 (starts at noon PDT) – May 3, 2016 (23:59:59 AOE) --> rebuttal period
-- May 30, 2016, notification date
-- tbd --> camera ready date
+- Submission deadline: June 15, 2016 (23:59:59 AOE, AOE Time Reference)
+- Notification to authors: July 25, 2016
+- Camera ready deadline: September 9, 2016
