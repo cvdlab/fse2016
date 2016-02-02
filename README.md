@@ -1,5 +1,5 @@
-# fse2016 - Industrial Track
-FSE 2016: ACM SIGSOFT International Symposium on the Foundations of Software Engineering
+# fse2016-industry
+FSE 2016 (Industrial Track): ACM SIGSOFT International Symposium on the Foundations of Software Engineering
 
 ## size limits
 
