@@ -4,6 +4,7 @@
 \usepackage[utf8x]{inputenc} % Linux (unicode package needed)
 % \usepackage[applemac]{inputenc} % Mac
 
+
 \begin{document}
 
 % Copyright
@@ -33,6 +34,11 @@
 % \CopyrightYear{2007} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
 % \crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
 % --- End of Author Metadata ---
+
+\newcommand{\WC}{\textit{Web Component}}
+\DeclareRobustCommand{\ttfamily}{\fontencoding{T1}\fontfamily{lmtt}\selectfont}
+\DeclareRobustCommand\sectt[1]{{\fontsize{13}{12}\bfseries\ttfamily#1}}
+
 
 \title{Granularized Single Page Web Application toward Front-End as a Service.}
 
@@ -116,8 +122,119 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-\section{The {\secit Body} of The Paper}
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\section{The web development so far {\secit titolo preliminare}}
+
+{\textbf NON  SI TRATTA PROPRIO DI QUANTO DEVE ESSERE FATTO NELL'INTRODUZIONE? ALTRIMENTI L'INTRODUZIONE NON SAREBBE ALTRO CHE UN ABSTRACT ALLUNGATO}
+
+In questa sezione si mettono in luce i problemi aperti nel campo dello sviluppo web.
+Devono essere presenti accenni a wordpress e accenni a soluzioni note di valore.
+Devono essere introdotti i problemi di monoliticità dei grossi framework come angular.
+
+\section{A new granularized approach}
+
+Si deve introdurre il contributo principale del papero: appoggiandosi ai \WC e a Polymer e facendo uso di adeguate tecniche e best practices, puntualmente esplicitate nel paper, è possibile far evolvere lo sviluppo web in una certa direzione \dots
+
+Tali best practices riguardano in particolare:
+
+\begin{itemize}
+  \item API (Server data communication)
+  \item routing (handler)
+  \item layout
+  \item structure (contesto, possono essere notificati eventi esterni gestiti all'interno del componente)
+  \item style (mixin)
+  \item session management (user management)
+\end{itemize}
+
+
+\subsection{Principles}
+Introdurre i principi di progettazione ispiratori
+
+\subsection{Benefits}
+In qusta sezione devono essere introdotti sommariamente alcuni benefici ripresi poi in un capitolo di discussione conclusivo.
+
+
+\section{Application routing}
+Con handlers
+
+\section{Server data communication}
+Solo tramite API restful
+
+\section{Page layout}
+
+\section{Pluggable structure}
+
+\section{Injected style}
+
+\section{Unidirectional data flow}
+
+\section{Session}
+
+\subsubsection{Authentication and user management}
+
+
+
+
+\section{Example}
+Descrivere l'esempio \lq\lq alla wprdpress\rq\rq
+
+\section{Experiences}
+
+\subsection{\sectt{x-learning}}
+
+\subsection{\sectt{x-commerce}}
+
+
+
+
+
+
+\section{Concetti e fonti rimaste escluse dalla trattazione}
+\begin{itemize}
+  \item Atomic desing
+  \item \dots
+\end{itemize}
+
+
+\section{Toward Front-End As A Service}
+
+Sezione visionaria in cui si parla di come deve evolvere il web ampliando anche sul client, lato front-end gli avanzamenti in termini di modularità che si sono visti emergere sul server.
+
+
+grande attenzione sul server è stato approfondito a tal punto da arrivare a parlare di applicazioni serverless.
+
+sul client si è investito moltissimo, ma senza progressi architetturali rilevanti.
+
+sono apparsi moltissimi framework monolitici e pervasivi => lock-in tecnologico
+
+sebbene con un po' di ritardo, sono usciti fuori i \WC
+
+sfruttandoli è possibile far evolvere il front end
+
+il principio è guida è \"tutto è un componente\"
+
+sulla base di questo principio l'applicazione monolitica viene \"polverizzata\" in moltissimi componenti.
+
+occorre quindi poter far comunicare questi componenti realizzando una
+
+coreografia di componenti che cooperano nell'ecosistema dell'applicazione
+
+senza la necessità dunque di ricorrere all'utilizzo di un framework.
+
+I componenti che derivano dalla polverizzazione dell'applicazione sono minimali e riusabili e possono essere montati insieme al fine di creare frammenti di applicazione (widget) riusabili
+
+
+
+
+
+\section{Discussion}
+Devono essere i possibli ostacoli di un simile approccio:
+
+\begin{itemize}
+  \item SEO
+  \item un altro che adesso non mi viene in mente ma di cui abbiamo parlato e scritto anche sui fogli a quadretti
+\end{itemize}
+
+la trattazione deve essere rapida e rimandare il lettore a fonti il cui il problema è affrontato e risolto.
 
 \section{Acknowledgments}
 
@@ -127,6 +244,8 @@ versions of this document.  Some of the references cited in this paper
 are included for illustrative purposes only.  \textbf{Don't forget
 to acknowledge funding sources as well}, so you don't wind up
 having to correct it later.
+
+
 
 \bibliographystyle{abbrv}
 \bibliography{bibliography}
